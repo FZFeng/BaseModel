@@ -63,6 +63,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C912F51D34D1540072579E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18DEDE2E1CFE8CC100FE2B98 /* FZNetworkHelper */,
+				18DEDE3C1CFE8CC100FE2B98 /* PublicClass */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		18C912F61D34D15E0072579E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		18C912F71D34D17C0072579E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		18DEDE0B1CFE8BC000FE2B98 = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +105,9 @@
 		18DEDE161CFE8BC000FE2B98 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				18DEDE2E1CFE8CC100FE2B98 /* FZNetworkHelper */,
-				18DEDE3C1CFE8CC100FE2B98 /* PublicClass */,
+				18C912F71D34D17C0072579E /* Controllers */,
+				18C912F61D34D15E0072579E /* Views */,
+				18C912F51D34D1540072579E /* Models */,
 				18DEDE1A1CFE8BC000FE2B98 /* AppDelegate.h */,
 				18DEDE1B1CFE8BC000FE2B98 /* AppDelegate.m */,
 				18DEDE1D1CFE8BC000FE2B98 /* ViewControllerTestDemo.h */,
@@ -382,6 +406,7 @@
 				18DEDE2D1CFE8BC000FE2B98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
