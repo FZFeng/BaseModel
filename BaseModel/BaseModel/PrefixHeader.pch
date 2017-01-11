@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  TNB
+//
+//  Created by kuaima on 16/7/26.
+//  Copyright © 2016年 Lin. All rights reserved.
+//
+
+//#import "LanguageString.h"
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define RGBA(r,g,b,a)           [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define RGB(r,g,b)              [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define IsLoginKey                          @"LoginStatus"
+#define ISFirstStart                        @"isFirstStartKey"
+#define ISFirstLogin                        @"isFirstLoginKey"
+#define isBackLogin                         @"isBackLoginKey"
+#define LoginAccount                        @"LoginAccountKey"
+#define LoginPassword                       @"LoginPasswordKey"
+#define ISLanguage_CN                       @"LanguageKey"
+#define UserSetLanguage                     @"UserSetLanguageKey"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

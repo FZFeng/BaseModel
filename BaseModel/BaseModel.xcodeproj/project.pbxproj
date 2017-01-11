@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183FD54B1E247BB2003EC288 /* FZUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FD5481E247BB2003EC288 /* FZUITextField.m */; };
+		183FD54C1E247BB2003EC288 /* FZUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FD54A1E247BB2003EC288 /* FZUIView.m */; };
 		18DEDE191CFE8BC000FE2B98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DEDE181CFE8BC000FE2B98 /* main.m */; };
 		18DEDE1C1CFE8BC000FE2B98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DEDE1B1CFE8BC000FE2B98 /* AppDelegate.m */; };
 		18DEDE1F1CFE8BC000FE2B98 /* ViewControllerTestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DEDE1E1CFE8BC000FE2B98 /* ViewControllerTestDemo.m */; };
@@ -25,7 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18137BE21D7D126B00C6F0B3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		183FD5471E247BB2003EC288 /* FZUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZUITextField.h; sourceTree = "<group>"; };
+		183FD5481E247BB2003EC288 /* FZUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZUITextField.m; sourceTree = "<group>"; };
+		183FD5491E247BB2003EC288 /* FZUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZUIView.h; sourceTree = "<group>"; };
+		183FD54A1E247BB2003EC288 /* FZUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZUIView.m; sourceTree = "<group>"; };
+		183FD54E1E24802E003EC288 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18DEDE141CFE8BC000FE2B98 /* BaseModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DEDE181CFE8BC000FE2B98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18DEDE1A1CFE8BC000FE2B98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,10 +70,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183FD5461E247B57003EC288 /* FZUIControl */ = {
+			isa = PBXGroup;
+			children = (
+				183FD5471E247BB2003EC288 /* FZUITextField.h */,
+				183FD5481E247BB2003EC288 /* FZUITextField.m */,
+				183FD5491E247BB2003EC288 /* FZUIView.h */,
+				183FD54A1E247BB2003EC288 /* FZUIView.m */,
+			);
+			name = FZUIControl;
+			sourceTree = "<group>";
+		};
+		183FD54D1E247C0B003EC288 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		18C912F51D34D1540072579E /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				18DEDE2E1CFE8CC100FE2B98 /* FZNetworkHelper */,
+				183FD5461E247B57003EC288 /* FZUIControl */,
 				18DEDE3C1CFE8CC100FE2B98 /* PublicClass */,
 			);
 			name = Models;
@@ -108,6 +133,7 @@
 			children = (
 				18C912F71D34D17C0072579E /* Controllers */,
 				18C912F61D34D15E0072579E /* Views */,
+				183FD54D1E247C0B003EC288 /* ViewModels */,
 				18C912F51D34D1540072579E /* Models */,
 				18DEDE1A1CFE8BC000FE2B98 /* AppDelegate.h */,
 				18DEDE1B1CFE8BC000FE2B98 /* AppDelegate.m */,
@@ -125,7 +151,7 @@
 		18DEDE171CFE8BC000FE2B98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				18137BE21D7D126B00C6F0B3 /* PrefixHeader.pch */,
+				183FD54E1E24802E003EC288 /* PrefixHeader.pch */,
 				18DEDE181CFE8BC000FE2B98 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -202,7 +228,7 @@
 		18DEDE0C1CFE8BC000FE2B98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "fabius's studio";
 				TargetAttributes = {
 					18DEDE131CFE8BC000FE2B98 = {
@@ -252,7 +278,9 @@
 				18DEDE1F1CFE8BC000FE2B98 /* ViewControllerTestDemo.m in Sources */,
 				18DEDE1C1CFE8BC000FE2B98 /* AppDelegate.m in Sources */,
 				18DEDE481CFE8CC100FE2B98 /* PublicFunc.m in Sources */,
+				183FD54B1E247BB2003EC288 /* FZUITextField.m in Sources */,
 				18DEDE431CFE8CC100FE2B98 /* MBProgressHUD.m in Sources */,
+				183FD54C1E247BB2003EC288 /* FZUIView.m in Sources */,
 				18DEDE471CFE8CC100FE2B98 /* Reachability.m in Sources */,
 				18DEDE411CFE8CC100FE2B98 /* FZNetworkHelper.m in Sources */,
 				18DEDE441CFE8CC100FE2B98 /* MBSpinningCircle.m in Sources */,
@@ -296,8 +324,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -340,8 +370,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -372,7 +404,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseModel/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseModel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fabius-s-studio.BaseModel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,7 +418,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseModel/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseModel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fabius-s-studio.BaseModel";
 				PRODUCT_NAME = "$(TARGET_NAME)";

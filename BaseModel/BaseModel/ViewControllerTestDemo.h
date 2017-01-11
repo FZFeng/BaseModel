@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "FZNetworkHelper.h"
 
+#import "FZUIView.h"
+#import "FZUITextField.h"
+
 @interface ViewControllerTestDemo : UIViewController
 
-- (IBAction)didBtnTest:(id)sender;
 
 @end
 
